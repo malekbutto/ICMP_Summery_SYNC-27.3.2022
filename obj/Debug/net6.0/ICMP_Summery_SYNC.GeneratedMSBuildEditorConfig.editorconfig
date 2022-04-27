@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ICMP_Summery_SYNC
+build_property.ProjectDir = c:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\

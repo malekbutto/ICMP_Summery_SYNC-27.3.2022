@@ -1,0 +1,15 @@
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\bin\Debug\net6.0\ICMP_Summery_SYNC.exe
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\bin\Debug\net6.0\ICMP_Summery_SYNC.deps.json
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\bin\Debug\net6.0\ICMP_Summery_SYNC.runtimeconfig.json
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\bin\Debug\net6.0\ICMP_Summery_SYNC.dll
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\bin\Debug\net6.0\ref\ICMP_Summery_SYNC.dll
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\bin\Debug\net6.0\ICMP_Summery_SYNC.pdb
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.csproj.AssemblyReference.cache
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.AssemblyInfoInputs.cache
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.AssemblyInfo.cs
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.csproj.CoreCompileInputs.cache
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.dll
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ref\ICMP_Summery_SYNC.dll
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.pdb
+C:\Users\pasio\Desktop\.net Course\.net\Console\Advanced c# programming - .net Core\ICMP_Summery_SYNC - 27.3.2022\obj\Debug\net6.0\ICMP_Summery_SYNC.genruntimeconfig.cache
