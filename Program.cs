@@ -22,6 +22,7 @@ class Program
                         pf = Parallel for
                         pfe = Parallel for each
                         pi = Parallel invoke
+                        aw = Async Await
                         OR ctrl+C to break...";
 
     #endregion
@@ -47,6 +48,8 @@ class Program
             PrintReport(GetHostsRepliesWithParallelForEach);
         else if (userInput == "pi")
             PrintReport(GetHostsRepliesWithParallelInvoke);
+        else if (userInput == "aw")
+            PrintReport(GetHostsRepliesWithAsyncAwaitWrapper);
         else Console.WriteLine("invalid input...");
     }
 
@@ -148,7 +151,7 @@ class Program
         {
             Ping ping = new Ping();
             List<PingReply> pingReplies = new List<PingReply>();
-            actions.Add(() => 
+            actions.Add(() =>
             {
                 for (int i = 0; i < _PingCount; i++)
                 {
@@ -199,7 +202,40 @@ class Program
     {
         return null;
     }
+    static Dictionary<string, List<PingReply>> GetHostsRepliesWithAsyncAwaitWrapper()
+    {
+        Task<Dictionary<string, List<PingReply>>> t = GetHostsRepliesWithAsyncAwait();
+        t.Wait();
+        return t.Result;
+    }
+
+    async static Task<Dictionary<string, List<PingReply>>> GetHostsRepliesWithAsyncAwait()
+    {
+        Dictionary<string, List<PingReply>> hostsReplies = new Dictionary<string, List<PingReply>>();
+        Dictionary<string, Task<List<PingReply>>> hostsTasks = new Dictionary<string, Task<List<PingReply>>>();
+        foreach (var hostName in _HostsNames)
+        {
+            hostsTasks.Add(hostName, GetPingRepliesAsyncAwait(hostName, _PingCount, _PingInterval));
+        }
+        foreach (var hostTask in hostsTasks)
+        {
+            var pingReply = await hostTask.Value;
+            hostsReplies.Add(hostTask.Key, pingReply);
+        }
+        return hostsReplies;
+    }
+
+    async static Task<List<PingReply>> GetPingRepliesAsyncAwait(string hostName, int pingCount = 1, int pingInterval = 1)
+    {
+        return await Task.Run(() => 
+        {
+            return GetPingReplies(hostName, pingCount, pingInterval); 
+        });
+    }
     #endregion
+
+    #region GetPingReplies
+    
 
     #region Print
     static void PrintLine() => Console.WriteLine("---------------------------");
@@ -245,6 +281,7 @@ class Program
         }
     }
 
+    #endregion
     #endregion
 
     static List<PingReply> GetPingReplies(string hostName)
